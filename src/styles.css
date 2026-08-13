@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+:root {
+  --color-bg: #F8F7F4;
+  --color-card: #FFFFFF;
+  --color-primary: #3F5E5A;
+  --color-accent: #C88B3A;
+  --color-text: #1F2937;
+  --color-text-secondary: #6B7280;
+  --color-border: #E5E7EB;
+}
+
+.dark {
+  --color-bg: #121212;
+  --color-card: #1B1B1D;
+  --color-surface: #242426;
+  --color-primary: #7EC8A5;
+  --color-accent: #E6B566;
+  --color-text: #F3F4F6;
+  --color-text-secondary: #9CA3AF;
+  --color-border: #2E2E30;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'DM Serif Display', serif;
+}

@@ -1,1 +1,8 @@
 <p>navbar works!</p>
+<button (click)="themeService.toggle()" class="p-2 rounded-full hover:bg-border">
+  @if (themeService.isDark()) {
+    <svg lucideSun></svg>
+  } @else {
+    <svg lucideMoon></svg>
+  }
+</button>
