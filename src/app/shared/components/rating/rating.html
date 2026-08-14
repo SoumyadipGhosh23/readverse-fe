@@ -1,0 +1,7 @@
+<!-- rating.html -->
+<div class="flex items-center gap-1">
+  <span class="text-accent">★</span>
+  @if (showValue()) {
+    <span class="text-sm text-text-secondary">{{ value().toFixed(1) }}</span>
+  }
+</div>
